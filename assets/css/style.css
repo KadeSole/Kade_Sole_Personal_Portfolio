@@ -1144,12 +1144,210 @@ main {
 /* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   *,
   *::before,
   *::after {
-    scroll-behavior: auto !important;
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  article.active {
+    animation: none;
+  }
+
+  .contact-card:hover,
+  .contact-card:focus-visible {
+    transform: none;
+  }
+}
+
+/* Accessibility and responsive refinements */
+
+html {
+  scroll-padding-top: 1rem;
+}
+
+body {
+  min-width: 0;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 100;
+  top: 12px;
+  left: 12px;
+  padding: 10px 14px;
+  background: var(--orange-yellow-crayola);
+  border-radius: 8px;
+  color: var(--smoky-black);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-600);
+  transform: translateY(-180%);
+  transition: transform var(--transition-1);
+}
+
+.skip-link:focus {
+  outline: 3px solid var(--white-1);
+  outline-offset: 3px;
+  transform: translateY(0);
+}
+
+.main-content,
+.sidebar,
+article,
+.timeline-item,
+.profile-item,
+.skill-card,
+.leadership-item,
+.contact-card {
+  min-width: 0;
+}
+
+main {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.navbar {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.navbar-link {
+  touch-action: manipulation;
+}
+
+.navbar-link[aria-current="page"] {
+  font-weight: var(--fw-600);
+}
+
+.contact-link,
+.contact-card-value,
+.timeline-item-title,
+.timeline-subtitle,
+.timeline-text,
+.achievement-list li,
+.leadership-item p {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible,
+.contact-card:hover .contact-card-value,
+.contact-card:focus-visible .contact-card-value {
+  color: var(--orange-yellow-crayola);
+}
+
+.contact-card:focus-visible {
+  outline-offset: 4px;
+}
+
+.timeline-item {
+  scroll-margin-top: 1rem;
+}
+
+@media (max-width: 359px) {
+  main {
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+
+  .sidebar,
+  article {
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .sidebar {
+    max-height: 106px;
+  }
+
+  .avatar-box img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .sidebar-info {
+    gap: 10px;
+  }
+
+  .info-content .name {
+    font-size: 16px;
+  }
+
+  .info-content .title {
+    max-width: 145px;
+    padding-inline: 8px;
+    font-size: 10px;
+  }
+
+  .navbar-link {
+    min-height: 50px;
+    padding-inline: 3px;
+    font-size: 10px;
+  }
+
+  .profile-item,
+  .skill-card,
+  .leadership-item,
+  .contact-card {
+    padding: 14px;
+  }
+
+  .timeline-list {
+    margin-left: 35px;
+  }
+
+  .timeline-item:not(:last-child)::before {
+    left: -23px;
+  }
+
+  .timeline-item::after {
+    left: -26px;
+  }
+}
+
+@media (min-width: 580px) and (max-width: 1249px) {
+  .sidebar.active {
+    max-height: 800px;
+  }
+}
+
+@media (min-width: 1250px) {
+  main {
+    padding-bottom: 0;
+  }
+
+  .navbar {
+    padding-bottom: 0;
+  }
+}
+
+@media (forced-colors: active) {
+  .article-title::after,
+  .navbar-link.active::after,
+  .timeline-item::after,
+  .achievement-list li::before {
+    background: CanvasText;
+  }
+
+  .sidebar,
+  article,
+  .profile-item,
+  .skill-card,
+  .leadership-item,
+  .contact-card,
+  .navbar {
+    border: 1px solid CanvasText;
+  }
+
+  .navbar-link.active,
+  .contact-link:hover,
+  .contact-link:focus-visible {
+    color: LinkText;
   }
 }

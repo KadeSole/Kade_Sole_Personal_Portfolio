@@ -23,6 +23,8 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <main>
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
@@ -68,7 +70,11 @@
 
             <div class="contact-info">
               <p class="contact-title">Email</p>
-              <a href="mailto:kadesole@umich.edu" class="contact-link">
+              <a
+                href="mailto:kadesole@umich.edu"
+                class="contact-link"
+                aria-label="Email Kade Sole at kadesole@umich.edu"
+              >
                 kadesole@umich.edu
               </a>
             </div>
@@ -81,9 +87,13 @@
 
             <div class="contact-info">
               <p class="contact-title">Phone</p>
-              <a href="tel:+12489813171" class="contact-link">
-                (248) 981-3171
-              </a>
+              <a
+                  href="tel:+12489813171"
+                  class="contact-link"
+                  aria-label="Call Kade Sole at 248-981-3171"
+                >
+                  (248) 981-3171
+                </a>
             </div>
           </li>
 
@@ -112,7 +122,7 @@
       </div>
     </aside>
 
-    <div class="main-content">
+    <div class="main-content" id="main-content">
       <nav class="navbar" aria-label="Portfolio sections">
         <ul class="navbar-list">
           <li class="navbar-item">
