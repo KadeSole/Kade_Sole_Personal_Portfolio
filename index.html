@@ -145,18 +145,6 @@
               class="navbar-link"
               type="button"
               data-nav-link
-              data-nav-target="projects"
-              aria-controls="projects-panel"
-            >
-              Projects
-            </button>
-          </li>
-
-          <li class="navbar-item">
-            <button
-              class="navbar-link"
-              type="button"
-              data-nav-link
               data-nav-target="contact"
               aria-controls="contact-panel"
             >
@@ -221,9 +209,7 @@
 
               <div>
                 <h4 class="h4">Current Internship</h4>
-                <p>
-                  Project System Integration Engineer Intern at Bosch
-                </p>
+                <p>Project System Integration Engineer Intern at Bosch</p>
               </div>
             </li>
 
@@ -274,32 +260,288 @@
           <h2 class="h2 article-title">Experience</h2>
         </header>
 
-        <section class="empty-state">
-          <h3 class="h3">Experience details</h3>
-          <p>
-            Detailed education and internship experience will be added in the
-            next content update.
-          </p>
+        <section class="timeline" aria-labelledby="education-heading">
+          <div class="title-wrapper">
+            <div class="icon-box" aria-hidden="true">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3" id="education-heading">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                University of Michigan-Flint
+              </h4>
+
+              <p class="timeline-subtitle">
+                College of Innovation and Technology
+              </p>
+
+              <p class="timeline-date">
+                August 2022–May 2027 <span>(anticipated)</span>
+              </p>
+
+              <p class="timeline-text">
+                Bachelor of Science in Computer Science, GPA: 3.52.
+              </p>
+            </li>
+          </ol>
         </section>
-      </article>
 
-      <article
-        class="projects"
-        id="projects-panel"
-        data-page="projects"
-        tabindex="-1"
-        hidden
-      >
-        <header>
-          <h2 class="h2 article-title">Projects</h2>
-        </header>
+        <section class="timeline" aria-labelledby="internships-heading">
+          <div class="title-wrapper">
+            <div class="icon-box" aria-hidden="true">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
 
-        <section class="empty-state">
-          <h3 class="h3">Project portfolio</h3>
-          <p>
-            Verified project descriptions and links will be added in a separate
-            content update.
-          </p>
+            <h3 class="h3" id="internships-heading">Internships</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <header class="experience-header">
+                <div>
+                  <h4 class="h4 timeline-item-title">Bosch</h4>
+                  <p class="timeline-subtitle">
+                    Project System Integration Engineer Intern
+                  </p>
+                </div>
+
+                <div class="experience-meta">
+                  <p>Plymouth, Michigan</p>
+                  <p>August 2025–Present</p>
+                </div>
+              </header>
+
+              <ul class="achievement-list">
+                <li>
+                  <strong>Flashing automation:</strong> Flashed vehicle
+                  development parts weekly and assist in developing a tool that
+                  automates the flashing process, reducing human error and
+                  saving approximately seven hours of work per week.
+                </li>
+
+                <li>
+                  <strong>Software debugging:</strong> Collaborated with the
+                  Triage team to diagnose and debug critical software issues,
+                  supporting problem identification and resolution on vehicle
+                  development systems.
+                </li>
+
+                <li>
+                  <strong>OScar project:</strong> Collaborated with three interns
+                  on a project focused on bridging software-defined and
+                  artificial intelligence-defined vehicles. Developed a
+                  non-locking lighting system that parses specified Controller
+                  Area Network messages to change lighting effects on demand.
+                </li>
+
+                <li>
+                  <strong>Vehicle prototyping:</strong> Contributed to a vehicle
+                  prototype by wiring and integrating lighting components and
+                  supporting hardware and software integration.
+                </li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <header class="experience-header">
+                <div>
+                  <h4 class="h4 timeline-item-title">Five More Talents</h4>
+                  <p class="timeline-subtitle">
+                    Web Development Intern
+                  </p>
+                </div>
+
+                <div class="experience-meta">
+                  <p>Remote</p>
+                  <p>June 2024–August 2024</p>
+                </div>
+              </header>
+
+              <ul class="achievement-list">
+                <li>
+                  <strong>Plugin development:</strong> Developed a WordPress
+                  plugin using the Lemonfox application programming interface
+                  to convert audio transcriptions into text and format the text
+                  into structured paragraphs, reducing transcription time by
+                  30% through optimized application programming interface
+                  handling.
+                </li>
+
+                <li>
+                  <strong>Structured content:</strong> Formatted more than
+                  1,000 hours of transcribed audio content into readable
+                  paragraphs, improving accessibility and the experience of
+                  site visitors.
+                </li>
+
+                <li>
+                  <strong>Team collaboration:</strong> Contributed to daily
+                  meetings by offering insights, demonstrating progress, and
+                  collaborating with team members on project development.
+                </li>
+
+                <li>
+                  <strong>Web design:</strong> Customized HTML and CSS designs
+                  for multiple websites, improving visual layout and user
+                  interaction for clients.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+
+        <section class="skills" aria-labelledby="skills-heading">
+          <div class="title-wrapper">
+            <div class="icon-box" aria-hidden="true">
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3" id="skills-heading">Programming Skills</h3>
+          </div>
+
+          <div class="skill-groups">
+            <section class="skill-card">
+              <h4 class="h4">Languages</h4>
+              <ul class="tag-list">
+                <li>Modern C++</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>PHP</li>
+              </ul>
+            </section>
+
+            <section class="skill-card">
+              <h4 class="h4">Technologies</h4>
+              <ul class="tag-list">
+                <li>CAN Bus</li>
+                <li>Git</li>
+                <li>Windows</li>
+                <li>Linux</li>
+              </ul>
+            </section>
+          </div>
+        </section>
+
+        <section class="timeline" aria-labelledby="additional-experience-heading">
+          <div class="title-wrapper">
+            <div class="icon-box" aria-hidden="true">
+              <ion-icon name="business-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3" id="additional-experience-heading">
+              Additional Experience
+            </h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <header class="experience-header">
+                <div>
+                  <h4 class="h4 timeline-item-title">
+                    Freedom Adult Foster Care Corp
+                  </h4>
+                  <p class="timeline-subtitle">
+                    Administrative Assistant to Comptroller
+                  </p>
+                </div>
+
+                <div class="experience-meta">
+                  <p>January 2024–August 2024</p>
+                </div>
+              </header>
+
+              <ul class="achievement-list">
+                <li>
+                  Assisted with implementing accounting principles to
+                  streamline financial operations, budget management, and
+                  financial reporting.
+                </li>
+                <li>
+                  Managed accounts receivable and payable processes, supporting
+                  timely payments and accurate transaction tracking.
+                </li>
+                <li>
+                  Supported onboarding, employee records, and payroll
+                  processing.
+                </li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <header class="experience-header">
+                <div>
+                  <h4 class="h4 timeline-item-title">
+                    Edible Arrangements
+                  </h4>
+                </div>
+
+                <div class="experience-meta">
+                  <p>Lake Orion, Michigan</p>
+                  <p>September 2019–March 2022</p>
+                </div>
+              </header>
+
+              <ul class="achievement-list">
+                <li>
+                  Led training sessions for new employees to improve team
+                  efficiency.
+                </li>
+                <li>
+                  Collaborated with five team members to improve productivity
+                  while maintaining a positive work environment.
+                </li>
+                <li>
+                  Mentored teams and helped achieve a 95% customer satisfaction
+                  rate through goal-oriented leadership and continuous
+                  feedback.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+
+        <section class="leadership" aria-labelledby="leadership-heading">
+          <div class="title-wrapper">
+            <div class="icon-box" aria-hidden="true">
+              <ion-icon name="people-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3" id="leadership-heading">
+              Organizations and Leadership
+            </h3>
+          </div>
+
+          <ul class="leadership-list">
+            <li class="leadership-item">
+              <h4 class="h4">UM-Flint Esports Organization</h4>
+              <p>
+                Active varsity player. Collegiate esports strengthened
+                communication and teamwork skills.
+              </p>
+            </li>
+
+            <li class="leadership-item">
+              <h4 class="h4">National Honor Society</h4>
+              <p>
+                Gained leadership experience through event planning, meetings,
+                and community service.
+              </p>
+            </li>
+
+            <li class="leadership-item">
+              <h4 class="h4">Freedom Adult Foster Care</h4>
+              <p>
+                Assisted developmentally disabled adults in achieving personal
+                goals and building companionship.
+              </p>
+            </li>
+          </ul>
         </section>
       </article>
 
