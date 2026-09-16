@@ -13,7 +13,7 @@ This repository serves as a personal portfolio I have developed based on vCard. 
 This was done for a senior level software engineering class at the University of Michigan
 To view this portfolio, please refer to: https://kadesole.github.io/Kade_Sole_Personal_Portfolio/
 
-
+![Project Main Page](Portfolio-page-main.png)
 
 ## License
 
